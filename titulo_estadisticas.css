@@ -1,0 +1,43 @@
+body {
+
+background-color: bisque; 
+font face: 'Poppins', sans-serif ;
+}
+h1 {
+display: inline-block; 
+position: relative; 
+font: 900 3em/1.2 Rubik, sans-serif; 
+padding: 0 .2em; 
+white-space: nowrap; 
+color: saddlebrown; 
+/*outline: solid 1px maroon; */
+}
+
+h1 div {
+position: absolute; 
+top: 0; left: 0; 
+padding: inherit; 
+font: inherit; 
+white-space: inherit; 
+background: burlywood; 
+-webkit-animation-name: bravo; 
+        animation-name: bravo; 
+-webkit-animation-duration: 1000ms; 
+        animation-duration: 1000ms; 
+-webkit-animation-iteration-count: infinite; 
+        animation-iteration-count: infinite; 
+-webkit-animation-direction: alternate; 
+        animation-direction: alternate; 
+-webkit-animation-timing-function: ease-in-out; 
+        animation-timing-function: ease-in-out; 
+}
+
+@-webkit-keyframes bravo {
+  from {top: 0px; }
+  to {top: 10px; }
+}
+
+@keyframes bravo {
+  from {top: 0px; }
+  to {top: 10px; }
+}

@@ -1,0 +1,253 @@
+<html>
+<head>
+<title>pagina4</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú despegable</title>
+    <link rel="stylesheet" href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/css/estilos.css">
+</head>
+<body>
+    
+    <nav class="nav">
+        <ul class="list">
+
+            <li class="list__item">
+                <div class="list__button">
+                	<link href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/css/texto_menu.css" rel="stylesheet" type="text/css">
+                    <img src="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/assets/dashboard.svg" class="list__img">
+                    <a href="frame2.html" class="nav__link"target="contenido">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link"><script language="JavaScript1.2">
+
+/*
+Nudging text by Matthias (info@freejavascripts.f2s.com)
+Modified by Dynamic Drive to function in NS6
+For this script and more, visit http://www.dynamicdrive.com
+*/
+
+//configure message
+message="Lista de Animales:"
+//animate text in NS6? (0 will turn it off)
+ns6switch=1
+
+var ns6=document.getElementById&&!document.all
+mes=new Array();
+mes[0]=-1;
+mes[1]=-4;
+mes[2]=-7;mes[3]=-10;
+mes[4]=-7;
+mes[5]=-4;
+mes[6]=-1;
+num=0;
+num2=0;
+txt="";
+function jump0(){
+if (ns6&&!ns6switch){
+jump.innerHTML=message
+return
+}
+if(message.length > 6){
+for(i=0; i != message.length;i++){
+txt=txt+"<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>"};
+jump.innerHTML=txt;
+txt="";
+jump1a()
+}
+else{
+alert("Your message is to short")
+}
+}
+
+function jump1a(){
+nfinal=(document.getElementById)? document.getElementById("n0") : document.all.n0
+nfinal.style.left=-num2;
+if(num2 != 9){
+num2=num2+3;
+setTimeout("jump1a()",50)
+}
+else{
+jump1b()
+}
+}
+
+function jump1b(){
+nfinal.style.left=-num2;
+if(num2 != 0){num2=num2-3;
+setTimeout("jump1b()",50)
+}
+else{
+jump2()
+}
+}
+
+function jump2(){
+txt="";
+for(i=0;i != message.length;i++){
+if(i+num > -1 && i+num < 7){
+txt=txt+"<span style='position:relative;top:"+mes[i+num]+"'>"+message.charAt(i)+"</span>"
+}
+else{txt=txt+"<span>"+message.charAt(i)+"</span>"}
+}
+jump.innerHTML=txt;
+txt="";
+if(num != (-message.length)){
+num--;
+setTimeout("jump2()",50)}
+else{num=0;
+setTimeout("jump0()",50)}}
+</script>
+</head>
+<body>
+
+<h2><div id="jumpx" style="color:#1882DE"></div></h2>
+<script>
+if (document.all||document.getElementById){
+jump=(document.getElementById)? document.getElementById("jumpx") : document.all.jumpx
+jump0()
+}
+else
+document.write(message)
+</script>
+</a>
+                    <img src="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/assets/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/abeja.html"class="nav__link nav__link--inside" target="contenido">Abeja</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/buey.html" class="nav__link nav__link--inside" target="contenido">Buey</a>
+                    </li>
+                    <li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/camaleon.html" class="nav__link nav__link--inside" target="contenido">Camaleon</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/delfin.html" class="nav__link nav__link--inside" target="contenido">Delfin</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/escorpion.html" class="nav__link nav__link--inside" target="contenido">Escorpion</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/faisan.html" class="nav__link nav__link--inside" target="contenido">Faisàn</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/gacela.html" class="nav__link nav__link--inside" target="contenido">Gacela</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/hiena.html" class="nav__link nav__link--inside" target="contenido">Hiena</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/ibis.html" class="nav__link nav__link--inside" target="contenido">Ibis Sagrado</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/jabali.html" class="nav__link nav__link--inside" target="contenido">Jabali</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/kiwi.html" class="nav__link nav__link--inside" target="contenido">Kiwi</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Lemur</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Macaco</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Narval</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Okapi</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Puma</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Quetzal</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Renacuajo</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Suricata</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Tortuga</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Urial</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Venado</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Walabi</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Xifosuro</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Yegua</a>
+					</li>
+
+					<li class="list__inside">
+						<a href="#" class="nav__link nav__link--inside" target="contenido">Zopilote</a>
+					</li>
+
+                </ul>
+
+            </li>          
+
+             <li class="list__item">
+                <div class="list__button">
+                    <img src="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/assets/stats.svg" class="list__img">
+                    <a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/estadisticas.html" class="nav__link" target="contenido">Estadisticas</a>
+                </div>
+            </li>
+
+       
+
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/assets/message.svg" class="list__img">
+                    <a href="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/html/contacto.html" class="nav__link" target="contenido">Contacto</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    
+    <script src="E:/APLICACIONES_CLIENTE/Pagina_Mamalona/js/main.js"></script>
+</body>
+</html>
